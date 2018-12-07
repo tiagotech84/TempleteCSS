@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <link rel="stylesheet" text="text/css" href="assets/css/my.css">
+
 
   </head>
   <body>
@@ -155,6 +157,7 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
               <h3>Olá!</h3>
+
               <p>Técnico em Informática a mais de 10 anos, resolvi mudar de carreira sem sair da área de tecnologia. Atualmente estudo análise de sistemas na Universidade Católica do Salvador. Iniciando o 4º semestre.</p>
               <div class="about-profile">
                 <ul class="admin-profile">
@@ -167,7 +170,7 @@
                   <li><span class="pro-title"> Telefone </span> <span class="pro-detail">+55 (71) 99157-6106</span></li>
                   <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Disponivel</span></li>
                 </ul>
-              </div>
+              <!-- </div> -->
               <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
               <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5571991576106" class="btn btn-danger" target="_blank"><i class="icon-speech"></i> Contact Me</a>
             </div>
@@ -577,7 +580,34 @@
     	<i class="icon-arrow-up"></i>
     </a>
 
+    <section>
+      <div class="container">
+        <form class="text-center" action="index.html" method="post">
+          <h1>Entre em contato</h1>
+          <p>
+            <!-- <label for="nome">Nome:  </label> -->
+            <input class="form-control" id="nome"  type="text" placeholder="Nome completo">
+          </p>
+          <p>
+            <!-- <label for="email">  E-mail: </label> -->
+            <input class="form-control" id="email" type="email"  placeholder="exemplo@email.com">
+          </p>
+          <p>
+            <!-- <label for="telefone">  Telefone: </label> -->
+            <input class="form-control" id="telefone" type="text"  placeholder="(xx)xxxxx-xxxx">
+          </p>
+          <p>
+            <textarea class="form-control" placeholder="Deixe um comentario"></textarea>
+          </p>
+          <p>
+            <input class="btn-btn-ptimary btn-lg btn-block" type="submit" value="Enviar" onclick="Enviar()">
+          </p>
+        </form>
+      </div>
+    </section>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/my.js"></script>
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -592,4 +622,6 @@
     <script src="assets/js/main.js"></script>
 
   </body>
+
+
 </html>
